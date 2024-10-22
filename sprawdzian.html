@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablice w JavaScript</title>
+</head>
+<body>
+    <script>
+        // Tworzenie tablicy
+        var nazwa = new Array('Magda', 'Ania', 'Aga'); // Przykład tablicy
+        document.write("Tablica: " + nazwa + "<br>");
+
+        // Długość tablicy
+        document.write("Długość tablicy: " + nazwa.length + "<br>");
+
+        // Tworzenie tablicy asocjacyjnej
+        var tab = new Array();
+        tab['Ala'] = "grzeczna";
+        tab['kot'] = "szary";
+        tab['pies'] = "szczekający";
+
+        // Iteracja po tablicy asocjacyjnej
+        for (var i in tab) {
+            document.write('Wartość tablicy ' + i + ' jest ' + tab[i] + "<br>");
+        }
+
+        // Metody obiektu ARRAY
+        var tab1 = ['a', 'b', 'c'];
+        var tab2 = ['d', 'e', 'f'];
+
+        // concat
+        var tab3 = tab1.concat(tab2);
+        document.write("Tablica po złączeniu (concat): " + tab3 + "<br>");
+
+        // indexOf
+        document.write("Indeks 'b': " + tab1.indexOf('b') + "<br>");
+        document.write("Indeks 'z': " + tab1.indexOf('z') + "<br>");
+
+        // join
+        document.write("Tablica po złączeniu (join): " + tab1.join(", ") + "<br>");
+
+        // lastIndexOf
+        document.write("Ostatni indeks 'a': " + tab3.lastIndexOf('a') + "<br>");
+
+        // pop
+        var lastElement = tab3.pop();
+        document.write("Usunięty element (pop): " + lastElement + "<br>");
+        document.write("Tablica po pop: " + tab3 + "<br>");
+
+        // push
+        tab3.push('g', 'h');
+        document.write("Tablica po push: " + tab3 + "<br>");
+
+        // reverse
+        tab3.reverse();
+        document.write("Tablica po reverse: " + tab3 + "<br>");
+
+        // shift
+        var firstElement = tab3.shift();
+        document.write("Usunięty element (shift): " + firstElement + "<br>");
+        document.write("Tablica po shift: " + tab3 + "<br>");
+
+        // slice
+        var slicedArray = tab3.slice(1, 3);
+        document.write("Tablica po slice: " + slicedArray + "<br>");
+
+        // sort
+        tab3.sort();
+        document.write("Tablica po sort: " + tab3 + "<br>");
+
+        // splice
+        tab3.splice(1, 1, 'x', 'y'); // Usuwa 1 element od indeksu 1 i dodaje 'x', 'y'
+        document.write("Tablica po splice: " + tab3 + "<br>");
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("string".big() + "<br>");         // Wywołanie .big()
+        document.write("string".blink() + "<br>"); // Wywołanie .blink()
+        document.write("string".bold() + "<br>"); // Wywołanie .bold()
+        document.write("string".italics() + "<br>"); // Wywołanie .italics()
+        document.write("string".small() + "<br>"); // Wywołanie .small()
+        document.write("string".sub() + "<br>"); // Wywołanie .sub()
+        document.write("string".strike() + "<br>"); // Wywołanie .strike()
+        document.write("string".fontcolor("red") + "<br>"); // Wywołanie .fontcolor()
+        document.write("string".fontsize(14) + "<br>"); // Wywołanie .fontsize()
+        
+        document.write("string".charAt(4) + "<br>"); // Wywołanie .charAt(4)
+        document.write("string".indexOf("in", 1) + "<br>"); // Wywołanie .indexOf("in", 1)
+        document.write("string".lastIndexOf("in", 6) + "<br>"); // Wywołanie .lastIndexOf("in", 6)
+        document.write("string".substring(1,4)+ "<br>");
+        document.write("string".toUpperCase()+ "<br>");
+        document.write("STRING".toLowerCase()+ "<br>");
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = 0;
+    a = 10;
+    let b = 0;
+    b = 43;
+    a = Math.exp(a);
+    document.write(a);
+    document.write("<br>");
+    a = Math.log(a);
+    document.write(a);
+    document.write("<br>");
+    document.write(Math.max(a,b));
+    document.write("<br>");
+    document.write(Math.min(a,b));
+    document.write("<br>");
+    document.write(Math.pow(a,2));
+    document.write("<br>");
+    a = Math.floor(a);
+    document.write(a);
+    document.write("<br>");
+    for(let i = 0; i < 10; i++){
+        let c = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+    document.write(c+" ");
+    }
+    document.write("<br>");
+    let d = 10.9432;
+    document.write(d);
+    d = Math.round(d);
+    document.write("<br>");
+    document.write(d);
+    document.write("<br>");
+    let e = Math.sin(a);
+    document.write(e);
+    document.write("<br>")
+    e = Math.sqrt(a);
+    document.write(e);
+    document.write("<br>")
+    e = Math.tan(a);
+    document.write(e);
+    document.write("<br>")
+
+
+    </script>
+</body>
+</html>
